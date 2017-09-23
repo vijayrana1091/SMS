@@ -10,7 +10,7 @@ namespace SMS.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("About");
         }
 
         public ActionResult About()
