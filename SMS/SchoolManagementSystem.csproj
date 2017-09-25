@@ -141,7 +141,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthenticateFilter.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\AuthorizeFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,6 +206,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMSEntities\SMSEntities.csproj">
+      <Project>{11df24fd-6b11-4189-934f-21cf3f15af00}</Project>
+      <Name>SMSEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSUtility\SMSUtility.csproj">
+      <Project>{85d17dd9-135b-4a56-ba05-70575070c76a}</Project>
+      <Name>SMSUtility</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
